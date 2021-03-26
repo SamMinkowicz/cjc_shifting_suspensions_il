@@ -8,7 +8,7 @@ class SuspensionData:
     folder1_path = Path.home().joinpath(current_dir, 'Folder+1_Original+License+Suspension+FOIA+Data')
     folder2_path = Path.home().joinpath(current_dir, 'Folder+2_Additional+Data+Received+January+2021')
     combined_data_filename = 'combined_suspension_people_by_zipcode.csv'
-    combined_data_path = current_dir / combined_data_filename
+    combined_data_path = Path.home().joinpath(current_dir, combined_data_filename)
 
     # maps suspension type to name of the file containing the raw data
     suspension_types = {
