@@ -42,7 +42,12 @@ class SuspensionRecords:
         """
         add column with the sum of all suspension recordss in a geographical region
         """
-        self.all_suspensions['total_records'] = self.all_suspensions.sum(axis=1)
+        columns_for_total_records = list(self.suspension_types.keys())
+
+        if 'visitation_abuse' in columns_for_total_records:
+            columns_for_total_records.remove('visitation_abuse')
+
+        self.all_suspensions['total_records'] = self.all_suspensions.loc[:, columns_for_total_records].sum(axis=1)
 
     def filter_out_non_illinois_zipcodes(self):
         """
