@@ -6,10 +6,10 @@ The Transit Table Coalition, obtained zip-code level data from the Illinois Secr
 
 Demographics data is from the ACS 2019 5-year survey.
 
-Our report can be found at TBD.
+Our report can be found at https://www.license2work.org/report.
 
 ## Data location
-The suspension data can be downloaded from the bottom of our report webpage. The scripts expect to find both of the suspensions data folders in their directory. The census data is included in this repo in the "census_data" folder.
+The suspension data can be downloaded from the bottom of https://www.license2work.org/data-details. The scripts expect to find both of the suspensions data folders in their directory. The census data is included in this repo in the "census_data" folder.
 
 ## Dependencies
 Numpy, scipy, matplotlib, and pandas.
